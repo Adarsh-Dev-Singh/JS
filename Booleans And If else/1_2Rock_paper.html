@@ -5,39 +5,16 @@
 </head>
 <body>
   <button onclick=" 
-    comChoice(); 
-    if(choice === 'Rock'){
-      result = 'Tie' ;
-    }else if(choice === 'Paper' ){
-      result = 'You Lose!' ;
-    }else if(choice === 'Scissor' ){
-      result = 'You Win!'  ;
-    }
-    alert(`You Picked Rock and Computer Picked ${choice} . ${result}` );
+    let choice = comChoice();
+    playGame('Rock');
     ">Rock</button>
   <button onclick="
-    comChoice(); 
-  if(choice === 'Paper'){
-    result = 'Tie' ;
-    }else if(choice === 'Rock' ){
-      result = 'You Lose!' ;
-    }else if(choice === 'Scissor' ){
-      result = 'You Win!'  ;        
-    }
-    alert(`You Picked Paper and Computer Picked ${choice} . ${result}` );
+     choice = comChoice();
+     playGame('Paper');
   ">Paper</button>
   <button onclick="
-    comChoice(); 
-
-  if(choice === 'Scissor'){
-    result = 'Tie' ;
-  }else if(choice === 'Rock' ){
-    result = 'You Lose!' ;
-  }else if(choice === 'Paper' ){
-    result = 'You Win!'  ;
-    
-  }
-  alert(`You Picked Scissor and Computer Picked ${choice} . ${result}` )
+    choice = comChoice();
+    playGame('Scissor');
   ">Scissor</button>
   
 
