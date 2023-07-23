@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Game</title>
+</head>
+<body>
+  <button onclick=" 
+    comChoice(); 
+    if(choice === 'Rock'){
+      result = 'Tie' ;
+    }else if(choice === 'Paper' ){
+      result = 'You Lose!' ;
+    }else if(choice === 'Scissor' ){
+      result = 'You Win!'  ;
+    }
+    alert(`You Picked Rock and Computer Picked ${choice} . ${result}` );
+    ">Rock</button>
+  <button onclick="
+    comChoice(); 
+  if(choice === 'Paper'){
+    result = 'Tie' ;
+    }else if(choice === 'Rock' ){
+      result = 'You Lose!' ;
+    }else if(choice === 'Scissor' ){
+      result = 'You Win!'  ;        
+    }
+    alert(`You Picked Paper and Computer Picked ${choice} . ${result}` );
+  ">Paper</button>
+  <button onclick="
+    comChoice(); 
+
+  if(choice === 'Scissor'){
+    result = 'Tie' ;
+  }else if(choice === 'Rock' ){
+    result = 'You Lose!' ;
+  }else if(choice === 'Paper' ){
+    result = 'You Win!'  ;
+    
+  }
+  alert(`You Picked Scissor and Computer Picked ${choice} . ${result}` )
+  ">Scissor</button>
+  
+
+<script src="script.js"></script>
+</body>
+</html>
