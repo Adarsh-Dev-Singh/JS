@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Game</title>
+</head>
+<body>
+  <button onclick=" 
+    let choice = comChoice();
+    playGame('Rock');
+    ">Rock</button>
+  <button onclick="
+     choice = comChoice();
+     playGame('Paper');
+  ">Paper</button>
+  <button onclick="
+    choice = comChoice();
+    playGame('Scissor');
+  ">Scissor</button>
+  <button onclick="
+    score.loss = 0;
+    score.win = 0;
+    score.tie = 0;
+  ">Reset Score</button>
+  
+
+<script src="script.js"></script>
+</body>
+</html>
