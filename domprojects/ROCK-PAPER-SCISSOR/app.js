@@ -12,6 +12,9 @@ let score = JSON.parse(localStorage.getItem('score')) || { // Default operator u
 //   }
 // }
 
+// document.querySelector('js-result').innerHTML = `${result} `;
+updateScore();
+
 function comChoice(){
   let choice = '';
   let Random = Math.random(); //random method from Math built-in object is used
@@ -31,7 +34,6 @@ function playGame(playerMove){
       result = 'Tie' ;
     }else if(choice === 'Paper' ){
       result = 'You Lose!' ;
-
     }else if(choice === 'Scissor' ){
       result = 'You Win!'  ;
     }
@@ -41,7 +43,6 @@ function playGame(playerMove){
       result = 'Tie' ;
     }else if(choice === 'Rock' ){
       result = 'You Win!' ;
-
     }else if(choice === 'Scissor' ){
       result = 'You Lose!'  ;      
     }
@@ -66,8 +67,19 @@ if(result === 'Tie'){
 
 localStorage.setItem('score',JSON.stringify(score));//JSON AND localStorage used
 
-alert(`You Picked ${playerMove} and Computer Picked ${choice} . ${result}
-Win : ${score.win} Loss : ${score.loss} Tie : ${score.tie}` );//Template String used
+updateScore();
+document.querySelector('.js-moves').innerHTML = `You <img src='${playerMove}-emoji.png' class='move-icon'> <img src='${choice}-emoji.png' class='move-icon'> Computer`;
+updateResult();
+// alert(`You Picked ${playerMove} and Computer Picked ${choice} . ${result}
+// Win : ${score.win} Loss : ${score.loss} Tie : ${score.tie}` );//Template String used
+}
+
+function updateScore(){
+  document.querySelector('.js-score')
+  .innerHTML = `Win : ${score.win} Loss : ${score.loss} Tie : ${score.tie}`;
+}
+function updateResult(){
+  document.querySelector('.js-result').innerHTML = result;
 }
 
 // location.reload();

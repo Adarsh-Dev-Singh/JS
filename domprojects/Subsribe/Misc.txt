@@ -1,0 +1,6 @@
+
+  <input type="text" class="js-input-cost" onkeydown="
+  // console.log(event); //event is an object inside event listeners in which key is a property and Enter is a value
+  if(event.key == 'Enter'){
+    calcShip();
+  }

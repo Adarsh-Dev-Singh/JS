@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p class="heading">ROCK PAPER SCISSOR</p>
+  <button class="move-button" onclick=" 
+    choice = comChoice();
+    playGame('Rock');
+    "><img src="rock-emoji.png" class="move-icon"></button>
+
+  <button class="move-button" onclick="
+     choice = comChoice();
+     playGame('Paper');
+  "><img src="paper-emoji.png" class="move-icon"></button>
+
+  <button class="move-button" onclick="
+    choice = comChoice();
+    playGame('Scissor');
+  "><img src="Scissor-emoji.png" class="move-icon"></button>
+
+  <p class="js-result result" >Win</p>
+  <p class="js-moves" > You <img class="move-icon" src="rock-emoji.png">  <img class="move-icon"  src="Scissor-emoji.png"> Computer</p>
+  <p class="js-score score"></p>
+
+  <button class="reset-score-button" onclick="
+    score.loss = 0;
+    score.win = 0;
+    score.tie = 0;
+    localStorage.removeItem('score');
+    updateScore();
+  ">Reset Score</button>
+
+  
+
+<script src="app.js"></script>
+</body>
+</html>

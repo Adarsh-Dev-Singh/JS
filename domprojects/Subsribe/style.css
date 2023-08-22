@@ -1,0 +1,33 @@
+body{
+  font-family: Arial;
+}
+
+.subs{
+  border-radius: 50px;
+  border-style: none;
+  background-color: rgb(240,240,240);
+  padding-left:20px; padding-right: 20px;
+  padding-top:10px;padding-bottom: 10px ;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.is-subbed{
+  background-color: rgb(52, 51, 51);
+  color: rgb(244, 244, 244);
+}
+
+.input-cost{
+  font-size: 15px;
+  padding: 10px;
+}
+
+.calcb{
+  font-size: 15px;
+  padding: 12px;
+  background-color: rgb(17, 140, 212);
+  color: rgb(239, 238, 238);
+  border-radius: 30px;
+  border:none;
+  cursor:pointer;
+}

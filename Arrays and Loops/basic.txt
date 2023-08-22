@@ -1,0 +1,12 @@
+const myArray = [10,
+  20,
+  30
+];
+console.log(Array.isArray(myArray));
+console.log(myArray.length);
+
+myArray.push(3); // adds value at the end of the array
+console.log(myArray);
+
+myArray.splice(0,2);// 1 -> from where location do you want to start to remove values and 2nd pos -> how many values you want to remove;
+console.log(myArray);
