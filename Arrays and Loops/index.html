@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <p>Todo List</p>
-  <input type="text" placeholder="Todo Name" class="js_inputName" onkeydown="if(event.key === 'Enter'){addToArray()}">
-  <button onclick="addToArray()">Add</button>
+  <div class="todo-input-grid"> 
+  <input type="text" placeholder="Todo Name" class="js_inputName name-input" onkeydown="if(event.key === 'Enter'){addToArray()}">
+  <input type="date" class="js-due-date-input due-date-input">   
+  <button class="add-todo-button" onclick="addToArray()">Add</button>
+</div>
+
+  <div class="js-output_div todo-list"></div>
   
   <script src="app.js"></script>
 </body>
